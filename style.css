@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body, html{
+    background-color: #1e1045;
+    padding: 0;
+    margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #dedede;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.book{
+    width: 298px;
+    height: 425px;
+    background-size: contain;
+    margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#books_list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.input_div{
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    justify-content: space-around;
+}
+
+.input_box{
+    background-color: transparent;
+    border: 1px solid #dedede;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: #dedede;
+    width: 200px;
+    height: 20px;
+}
+
+.button{
+    width: 100px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #dedede;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: #dedede;
+}
+
+@media screen and (max-width: 646px){
+    #books_list{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 685px){
+ .input_div{
+     flex-direction: column;
+     align-items: center;
+ }
+}

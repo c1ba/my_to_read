@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Read List</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div style="width: 100%; height: auto; display: flex; flex-direction: column; padding: 10px 0; align-items: center;">
+        <div class="input_div">
+            <label for="Title" style="display: flex;"><h3 style="margin-top: -2px; margin-right: 4px;">Title:</h3>
+            <input type="text" id="title" class="input_box" name="Title"/>
+            </label>
+            <label for="Author" style="display: flex;"><h3 style="margin-top: -2px; margin-right: 4px;">Author:</h3> 
+            <input type="text" id="author" class="input_box" name="Author"/>
+            </label>
+            <label for="pages_total" style="display: flex;"><h3 style="margin-top: -2px; margin-right: 4px;">Total Pages:</h3> 
+            <input type="number" id="pages" class="input_box" name="pages_total"/>
+            </label>
+            <label for="pages_read" style="display: flex;"><h3 style="margin-top: -2px; margin-right: 4px;">Read Pages:</h3>
+            <input type="number" id="read_pages" class="input_box" name="pages_read"/>  
+            </label>   
+        </div>
+        <input class="button" type="submit" id="submit_butt" value="SEND"/>
+        <input class="button" type="submit" id="clear_butt" value="CLEAR LIST"/>
+    </div>
+
+    <div id="books_record" style="width: 100%; height: auto; margin: 20px 0;"></div>
+    
+    <div id="books_list">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
